@@ -2,15 +2,27 @@
 title: "First version control project"
 author: "Oliver Mulville"
 date: "2025-06-11"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
-**Hello** world!
-
-Here is a nice little plot:
-
-```{r, test-plot, echo=FALSE}
-plot(cars)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE)
 ```
 
 
+**Hello** everyone! This is my first attempt to use GitHub and Git on my own. I will be making lots of changes here and this document is for my own learning only.
+
+Here is a nice little plot, with speed against distance:
+
+```{r, test-plot, echo=FALSE}
+plot(cars, col = "red", xlab = "speed (mph)", ylab = "distance (miles)")
+```
+
+A summary of the data frame is given below
+
+```{r, cars-summary}
+library(knitr)
+kable(summary(cars))
+```
