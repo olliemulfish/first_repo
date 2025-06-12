@@ -1,0 +1,12 @@
+---
+title: "boop"
+author: "Oliver Mulville"
+date: "2025-06-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+beep boop i am a robot
